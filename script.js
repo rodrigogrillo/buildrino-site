@@ -3,6 +3,7 @@
 // ============================================
 const CONFIG = {
   contactEmail: "hello@buildrino.com",
+  whatsappNumber: "19432550810",
 };
 
 // ============================================
@@ -226,6 +227,19 @@ function applyLang(lang) {
   });
   localStorage.setItem("lang", lang);
   currentLang = lang;
+  updateWhatsappLink(lang);
+}
+
+const whatsappMessages = {
+  en: "Hi! I'd like a quote for a website.",
+  pt: "Oi! Gostaria de um orçamento para um site.",
+};
+
+function updateWhatsappLink(lang) {
+  const link = document.getElementById("whatsapp-link");
+  if (!link) return;
+  const text = encodeURIComponent(whatsappMessages[lang] || whatsappMessages.en);
+  link.href = `https://wa.me/${CONFIG.whatsappNumber}?text=${text}`;
 }
 
 let currentLang = detectLang();
