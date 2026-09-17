@@ -17,20 +17,20 @@ const translations = {
     "nav.contact": "Contact",
     "nav.cta": "Request a quote",
 
-    "hero.title": "Websites that get your business found, built in days — not months.",
-    "hero.sub": "I design and launch custom websites for independent professionals and small businesses — no templates, no bloated builders, just a fast site that looks like it cost ten times more.",
+    "hero.title": "Websites that get your business found, built in days, not months.",
+    "hero.sub": "I design and launch custom websites for independent professionals and small businesses: no templates, no bloated builders, just a fast site that looks like it cost ten times more.",
     "hero.ctaPrimary": "Start your project",
     "hero.ctaSecondary": "See the work",
 
     "strip.speed.title": "Live in about a week",
-    "strip.speed.body": "From our first call to a published site — no months-long agency timelines.",
+    "strip.speed.body": "From our first call to a published site, without months-long agency timelines.",
     "strip.custom.title": "Designed, not templated",
-    "strip.custom.body": "Every site is built around your work — your colors, your services, your story.",
+    "strip.custom.body": "Every site is built around your work: your colors, your services, your story.",
     "strip.mobile.title": "Mobile-first, always",
     "strip.mobile.body": "Most of your visitors arrive on a phone. Your site is built for that first.",
 
     "work.title": "Recent work",
-    "work.sub": "Every project starts from a blank page — colors, layout, and structure built around what that specific business actually does, not a reused template.",
+    "work.sub": "Every project starts from a blank page: colors, layout, and structure built around what that specific business actually does, not a reused template.",
     "work.placeholder": "Screenshot coming soon",
     "work.physio.title": "Physical therapist",
     "work.physio.body": "A calm, warm site built around their own treatments and service area.",
@@ -40,16 +40,16 @@ const translations = {
     "process.title": "How a project runs",
     "process.sub": "Four steps, start to finish.",
     "process.s1.title": "We gather your content",
-    "process.s1.body": "Services, photos, service area, contact details — a short call or form, on your time.",
+    "process.s1.body": "Services, photos, service area, and contact details, collected through a short call or form, on your time.",
     "process.s2.title": "I design around your brand",
-    "process.s2.body": "Real colors from your logo, real copy about your work — never a generic template.",
+    "process.s2.body": "Real colors from your logo and real copy about your work, never a generic template.",
     "process.s3.title": "You review, we refine",
     "process.s3.body": "You see the actual site before it goes live, and we adjust until it's right.",
     "process.s4.title": "We publish it",
     "process.s4.body": "Domain connected, basic SEO in place, and your site goes live on the web.",
 
     "packages.title": "Packages",
-    "packages.sub": "Every project is quoted individually — here's what's typically included.",
+    "packages.sub": "Every project is quoted individually. Here's what's typically included.",
     "packages.tag": "Most requested",
     "packages.cta": "Choose this package",
     "packages.basic.title": "Essential",
@@ -66,7 +66,7 @@ const translations = {
     "packages.full.f4": "Full SEO setup + sitemap submission",
 
     "contact.title": "Let's scope your site",
-    "contact.sub": "A few questions up front means a faster, more accurate quote — no back-and-forth needed to get started.",
+    "contact.sub": "A few questions up front means a faster, more accurate quote, with no back-and-forth needed to get started.",
     "contact.section1": "About you",
     "contact.name": "Name",
     "contact.profession": "Profession / area of work",
@@ -114,20 +114,20 @@ const translations = {
     "nav.contact": "Contato",
     "nav.cta": "Solicitar orçamento",
 
-    "hero.title": "Sites que fazem seu negócio ser encontrado, prontos em dias — não em meses.",
-    "hero.sub": "Eu crio e publico sites sob medida para profissionais autônomos e pequenos negócios — sem templates genéricos, sem construtores inchados, só um site rápido que parece ter custado dez vezes mais.",
+    "hero.title": "Sites que fazem seu negócio ser encontrado, prontos em dias, não em meses.",
+    "hero.sub": "Eu crio e publico sites sob medida para profissionais autônomos e pequenos negócios: sem templates genéricos, sem construtores inchados, só um site rápido que parece ter custado dez vezes mais.",
     "hero.ctaPrimary": "Comece seu projeto",
     "hero.ctaSecondary": "Ver os trabalhos",
 
     "strip.speed.title": "No ar em cerca de uma semana",
-    "strip.speed.body": "Da primeira conversa até o site publicado — sem prazos de meses de agência.",
+    "strip.speed.body": "Da primeira conversa até o site publicado, sem prazos de meses de agência.",
     "strip.custom.title": "Desenhado, não montado em template",
-    "strip.custom.body": "Cada site é construído em torno do seu trabalho — suas cores, seus serviços, sua história.",
+    "strip.custom.body": "Cada site é construído em torno do seu trabalho: suas cores, seus serviços, sua história.",
     "strip.mobile.title": "Mobile-first, sempre",
     "strip.mobile.body": "A maioria dos visitantes chega pelo celular. Seu site é pensado pra isso primeiro.",
 
     "work.title": "Trabalhos recentes",
-    "work.sub": "Cada projeto começa do zero — cores, layout e estrutura pensados para o que aquele negócio realmente faz, nunca um template reaproveitado.",
+    "work.sub": "Cada projeto começa do zero: cores, layout e estrutura pensados para o que aquele negócio realmente faz, nunca um template reaproveitado.",
     "work.placeholder": "Captura de tela em breve",
     "work.physio.title": "Fisioterapeuta",
     "work.physio.body": "Um site calmo e acolhedor, construído em torno dos próprios tratamentos e área de atendimento.",
@@ -137,16 +137,16 @@ const translations = {
     "process.title": "Como funciona um projeto",
     "process.sub": "Quatro etapas, do início ao fim.",
     "process.s1.title": "Coletamos seu conteúdo",
-    "process.s1.body": "Serviços, fotos, área de atendimento, contatos — uma conversa curta ou formulário, no seu tempo.",
+    "process.s1.body": "Serviços, fotos, área de atendimento e contatos, coletados por uma conversa curta ou formulário, no seu tempo.",
     "process.s2.title": "Eu desenho em torno da sua marca",
-    "process.s2.body": "Cores reais extraídas da sua logo, texto real sobre seu trabalho — nunca um template genérico.",
+    "process.s2.body": "Cores reais extraídas da sua logo e texto real sobre seu trabalho, nunca um template genérico.",
     "process.s3.title": "Você revisa, a gente ajusta",
     "process.s3.body": "Você vê o site de verdade antes de publicar, e ajustamos até ficar certo.",
     "process.s4.title": "Publicamos",
     "process.s4.body": "Domínio conectado, SEO básico configurado, e seu site vai ao ar.",
 
     "packages.title": "Pacotes",
-    "packages.sub": "Cada projeto é orçado individualmente — isto é o que normalmente está incluso.",
+    "packages.sub": "Cada projeto é orçado individualmente. Isto é o que normalmente está incluso.",
     "packages.tag": "Mais pedido",
     "packages.cta": "Escolher esse pacote",
     "packages.basic.title": "Essencial",
@@ -163,7 +163,7 @@ const translations = {
     "packages.full.f4": "SEO completo + envio de sitemap",
 
     "contact.title": "Vamos estruturar o seu site",
-    "contact.sub": "Algumas perguntas agora significam um orçamento mais rápido e preciso — sem ida e volta pra começar.",
+    "contact.sub": "Algumas perguntas agora significam um orçamento mais rápido e preciso, sem ida e volta pra começar.",
     "contact.section1": "Sobre você",
     "contact.name": "Nome",
     "contact.profession": "Profissão / área de atuação",
@@ -413,7 +413,7 @@ document.getElementById("contact-form")?.addEventListener("submit", (e) => {
     `${L.message}: ${get("message")}`,
   ];
   const plainBody = lines.join("\n");
-  const subject = encodeURIComponent(`${L.subject} — ${get("name")}`);
+  const subject = encodeURIComponent(`${L.subject}: ${get("name")}`);
   const mailtoUrl = `mailto:${CONFIG.contactEmail}?subject=${subject}&body=${encodeURIComponent(plainBody)}`;
 
   // Try to open the person's email app in a new tab via a real link click —
