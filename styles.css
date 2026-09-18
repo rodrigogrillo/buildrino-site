@@ -196,6 +196,30 @@ a { color: inherit; }
   #build-svg .draw-block, #build-svg .cursor { animation: none; }
 }
 
+/* ---------- Scroll reveal ----------
+   Elements are visible by default at their natural position.
+   Only once JS confirms it's running (.js-reveal on <html>) do
+   they take a slight offset, then ease back to place as they
+   scroll into view. If JS fails, content simply never gets the
+   offset — it's never hidden or broken. */
+.reveal { transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1); }
+.js-reveal .reveal { transform: translateY(22px); }
+.js-reveal .reveal.is-visible { transform: translateY(0); }
+
+.strip-item.reveal:nth-child(2) { transition-delay: 0.06s; }
+.strip-item.reveal:nth-child(3) { transition-delay: 0.12s; }
+.strip-item.reveal:nth-child(4) { transition-delay: 0.18s; }
+.work-grid .work-card.reveal:nth-child(2) { transition-delay: 0.1s; }
+.testimonials-grid .testimonial-card.reveal:nth-child(2) { transition-delay: 0.1s; }
+.packages-grid .package-card.reveal:nth-child(2) { transition-delay: 0.1s; }
+.process-list li.reveal:nth-child(2) { transition-delay: 0.06s; }
+.process-list li.reveal:nth-child(3) { transition-delay: 0.12s; }
+.process-list li.reveal:nth-child(4) { transition-delay: 0.18s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .js-reveal .reveal { transition: none; transform: none; }
+}
+
 /* ---------- Differentials strip ---------- */
 .strip { padding: 8px 0 72px; }
 .strip-grid {
@@ -273,6 +297,34 @@ a { color: inherit; }
 }
 .process-list h3 { margin-bottom: 4px; }
 .process-list p { color: var(--muted); margin: 0; }
+
+/* ---------- Testimonials ---------- */
+.testimonials { padding: 72px 0; border-top: 1px solid var(--line); }
+.testimonials-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+.testimonial-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 32px;
+  background: var(--paper-raised);
+}
+.testimonial-card .quote-mark {
+  width: 34px; height: 28px;
+  color: var(--teal);
+  display: block;
+  margin-bottom: 18px;
+}
+.testimonial-card > p:not(.testimonial-attribution) {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--ink);
+  margin-bottom: 20px;
+}
+.testimonial-attribution {
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0;
+}
+.testimonial-attribution span { font-weight: 400; color: var(--muted); }
 
 /* ---------- Packages ---------- */
 .packages-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: stretch; }
@@ -516,6 +568,7 @@ a:focus-visible, button:focus-visible {
   .hero-visual { order: -1; }
   .strip-grid { grid-template-columns: 1fr 1fr; }
   .work-grid { grid-template-columns: 1fr; }
+  .testimonials-grid { grid-template-columns: 1fr; }
   .packages-grid { grid-template-columns: 1fr; }
   .form-grid, .checkbox-grid, .social-list { grid-template-columns: 1fr; }
 }

@@ -6,6 +6,10 @@ const CONFIG = {
   whatsappNumber: "19432550810",
 };
 
+// Signal that JS is running, before anything else — .reveal elements
+// only get their scroll-in offset once this class is present (see CSS).
+document.documentElement.classList.add("js-reveal");
+
 // ============================================
 // TRANSLATIONS
 // ============================================
@@ -47,6 +51,12 @@ const translations = {
     "process.s3.body": "You see the actual site before it goes live, and we adjust until it's right.",
     "process.s4.title": "We publish it",
     "process.s4.body": "Domain connected, basic SEO in place, and your site goes live on the web.",
+
+    "testimonials.title": "What clients say",
+    "testimonials.physio.quote": "I want to thank and recognize the excellent work creating my professional website. It turned out modern, elegant, and perfectly captured the identity of my work. Thank you for the dedication, creativity, and attention to detail. I'm very happy with the result!",
+    "testimonials.physio.role": ", Physical therapist",
+    "testimonials.dentist.quote": "Excellent work creating my professional website! The result is modern, elegant, and conveys exactly the values I want to offer my patients: safety, trust, technology, and humanized care. Congratulations on the dedication and care in every detail. It turned out excellent!",
+    "testimonials.dentist.role": ", Dentist",
 
     "packages.title": "Packages",
     "packages.sub": "Every project is quoted individually. Here's what's typically included.",
@@ -144,6 +154,12 @@ const translations = {
     "process.s3.body": "Você vê o site de verdade antes de publicar, e ajustamos até ficar certo.",
     "process.s4.title": "Publicamos",
     "process.s4.body": "Domínio conectado, SEO básico configurado, e seu site vai ao ar.",
+
+    "testimonials.title": "O que dizem os clientes",
+    "testimonials.physio.quote": "Quero agradecer e reconhecer o excelente trabalho na criação do meu site profissional. Ficou moderno, elegante e transmitiu perfeitamente a identidade do meu trabalho. Obrigado pela dedicação, criatividade e atenção aos detalhes. Estou muito satisfeito com o resultado!",
+    "testimonials.physio.role": ", Fisioterapeuta",
+    "testimonials.dentist.quote": "Excelente trabalho na criação do meu site profissional! O resultado ficou moderno, elegante e transmite exatamente os valores que quero oferecer aos meus pacientes: segurança, confiança, tecnologia e atendimento humanizado. Parabéns pela dedicação e pelo cuidado em cada detalhe. Ficou excelente!",
+    "testimonials.dentist.role": ", Dentista",
 
     "packages.title": "Pacotes",
     "packages.sub": "Cada projeto é orçado individualmente. Isto é o que normalmente está incluso.",
@@ -452,3 +468,24 @@ document.getElementById("fallback-copy-btn")?.addEventListener("click", () => {
     setTimeout(() => { btn.textContent = FB.copy; }, 2000);
   });
 });
+
+// ============================================
+// SCROLL REVEAL
+// ============================================
+if ("IntersectionObserver" in window) {
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15, rootMargin: "0px 0px -40px 0px" }
+  );
+  document.querySelectorAll(".reveal").forEach((el) => revealObserver.observe(el));
+} else {
+  // No IntersectionObserver support: just show everything as-is.
+  document.querySelectorAll(".reveal").forEach((el) => el.classList.add("is-visible"));
+}
